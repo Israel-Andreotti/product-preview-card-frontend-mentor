@@ -1,0 +1,203 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-greyish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cream);
+
+}
+
+@media (max-width: 375px) {
+    .container_desktop {
+        display: none;
+    }
+    .container {
+        margin: 2rem 1.5rem;
+        background-color: var(--white);
+        border-radius: 10px;
+    }
+    
+    .container img {
+        display: block;
+        margin-inline: auto;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .content {
+        padding: 1.5rem;
+    }
+    
+    .category {
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        font-family: 'Montserrat', sans-serif;
+        color: var(--dark-greyish-blue);
+    }
+    
+    .name {
+        margin-top: .4rem;
+        font-family: 'Fraunces', sans-serif;
+    }
+    
+    .description {
+        margin-top: 1rem;
+        color: var(--dark-greyish-blue);
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+    
+    .prices {
+        display: flex;
+        align-items: center;
+        margin-top: 1.4rem;
+    }
+    
+    .sale-price {
+        font-size: 1.8rem;
+        font-family: 'Fraunces', sans-serif;
+        color: var(--dark-cyan);
+        font-weight: 700;
+        padding-right: 1.1rem;
+    }
+    
+    .price {
+        color: var(--dark-greyish-blue);
+        text-decoration: line-through;
+    }
+    
+    .btn {
+        width: 100%;
+        background-color: var(--dark-cyan);
+        padding-block: .8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--white);
+        gap: .5rem;
+        border: none;
+        border-radius: 10px;
+        margin-top: .8rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+    
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 18
+    }
+}
+
+@media (min-width: 375px) {
+    .container {
+        display: none;
+    }
+
+    .container_desktop {
+        background-color: var(--white);
+        width: 600px;
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
+
+    .container_desktop img {
+        width: 50%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .content_desktop {
+        padding: 1.5rem;
+        margin-right: 2rem;
+    }
+
+    .category_desktop {
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        font-size: .8rem;
+        font-family: 'Montserrat', sans-serif;
+        color: var(--dark-greyish-blue);
+    }
+
+    .name_desktop {
+        margin-top: 1rem;
+        font-size: 2.3rem;
+    }
+
+    .description_desktop {
+        margin-top: 1rem;
+        color:var(--dark-cyan);
+        line-height: 1.5rem;
+    }
+
+    .prices_desktop {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        font-family: 'Fraunces';
+    }
+
+    .sale-price_desktop {
+        font-size: 32px;
+        color: var(--dark-cyan);
+        font-weight: 700;
+    }
+
+    .price_desktop {
+        text-decoration: line-through;
+        color: var(--dark-greyish-blue);
+        font-size: .8rem;
+    }
+
+    .btn_desktop {
+        width: 110%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .4rem;
+        padding-block: .5rem;
+        margin-top: 1rem;
+        background-color: var(--dark-cyan);
+        color: var(--white);
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn_desktop:hover {
+        background-color: #153f19;
+        cursor: pointer;
+        text-shadow: 1px 2px 3px #153f19;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 18
+    }
+}
+
+
