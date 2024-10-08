@@ -18,12 +18,13 @@ body {
 
 }
 
-@media (max-width: 375px) {
+@media (width <= 612px) {
     .container_desktop {
         display: none;
     }
+
     .container {
-        margin: 2rem 1.5rem;
+        margin: 2rem;
         background-color: var(--white);
         border-radius: 10px;
     }
@@ -104,7 +105,7 @@ body {
     }
 }
 
-@media (min-width: 375px) {
+@media (width >= 612px) {
     .container {
         display: none;
     }
